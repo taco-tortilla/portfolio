@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+      }
+      body #wrapper{
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        position: fixed;
+      }
+      #container{
+        position: absolute;
+        /*top: 0;*/
+        /*right: 20px;
+        left: 20px;*/
+      }
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/three@0.137.4/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <canvas id="wave"></canvas>
+    </div>
+    <div id="container">
+      <header>
+        <nav class="gnav">
+          <ul>
+            <li><a href="">TOP</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SAMPLE</a></li>
+            <!--<li><a href="">BLOG</a></li>-->
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="logo">
+        <h2>Welcome!</h2>
+      </div>
+      <footer></footer>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script src="js/perlin.js"></script>
+    <script src="js/wave.js"></script>
+  </body>
+</html>

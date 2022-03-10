@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+p{
+    color: #ffffff;
+}
+
+
+/*********************************
+	アニメーション(フェードイン)
+*********************************/
+/*
+.fadeIn {
+    animation-name: fadeIn; /* 定義名 
+    animation-duration: 0.7s; /* アニメーションの長さ 
+    animation-iteration-count: 1; /* ループさせるか 
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); /* アニメーションの進行具合 
+    animation-fill-mode: forwards; /* 開始と終了状態 
+
+    animation-delay: 0.5s; /* 開始を遅らせる 
+    animation-direction: normal; /* アニメーションの再生向き 
+}
+*/
+
+#container{
+    animation: fadeIn 3s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    /* animation: 定義名 変化時間 進行具合 開始時間 ループ アニメーションの再生向き*/
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*********************************
+	ヘッダー
+*********************************/
+header {
+    width: 100%;
+    padding: 30px 4% 10px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+}
+
+li {
+    margin: 0 30px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    /*font-weight: bold;*/
+}
+
+nav {
+    margin: 0 auto;
+}
+
+/*********************************
+	トップページ（ロゴ）
+*********************************/
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
